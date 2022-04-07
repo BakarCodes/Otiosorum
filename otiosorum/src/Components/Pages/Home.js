@@ -6,32 +6,32 @@ import {Button} from '../Button.js'
 function Home() {
   return (
     <div className='Home'>
-        <h1>OTIOSORUM</h1>
+        <h1>OTIO</h1>
         <div className='Slogan'>
             <b>HOME FOR THE UNDERRATED</b>
         </div>
         <div className='Introduction'>
-            <img className='London' src='../images/London.png' alt="London"></img>
+            
             <div className='SubHeading'>
                 <h3 className='Subtitle'>
                     KNOW YOUR FAVOURITES
                 </h3>
                 <p className='KnowParagraph'>
                     <p>
-                        WITH OTIO UNDERSTAND BE UNDERSTOOD AS A BRAND 
+                        WITH OTIO UNDERSTAND & BE UNDERSTOOD AS A BRAND 
                     </p>
                     <p>
                         NEVER MISS A STEP IN QUALITY ASSURANCE
                     </p>
                     <p>
-                        SIGN UP TO NOW
+                        SIGN UP NOW TO
                     </p>
                     <p className='Coloured'>
                         <p>
-                            READ 
+                            READ REVIEWS
                         </p>
                         <p>
-                            POST 
+                            POST REVIEWS
                         </p>
                         <p>
                             OR BE REVIEWED 
@@ -39,9 +39,15 @@ function Home() {
                     </p>
                 </p>
             </div>
-            
            
         </div>
+        <div className='Location'>
+            <div className='LocationText'>
+                <h3>LONDON BASED COMPANY</h3>
+            </div>
+        </div>
+            
+
     </div>
   )
 }

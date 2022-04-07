@@ -8,7 +8,7 @@ body{
     border-color: black;
 }
 .Slogan{
-    font-size: 1.52rem;
+    font-size: 0.9orem;
     color: rgba(0, 0, 0, 0.663);
     text-align: center;
 }
@@ -24,13 +24,15 @@ h1{
     margin-left: auto;
     margin-right: auto;
     width: 73.3%;
-    margin-top: 4%;
+    margin-top: 6%;
     height: auto;
+   
 }
 
-.London{
-    float: right;
-    opacity: 0.5;
+.Review{
+   display: inline-flex;
+   float: right;
+   
 }
 
 .SubHeading{
@@ -48,5 +50,18 @@ h1{
 .Coloured {
     color: rgb(252, 79, 79);
     font-size: 2rem;
+}
+
+.Location{
+    display: block;
+    width: 100%;
+    margin-top: 9%;
+    height: auto;
+    Text-align: right;
+    background-color:rgb(219, 97, 97); ;   
+    padding-right: 14%; 
+    padding-bottom: 14%;
+    font-size: 2.2rem;
+    color: white;
 }
 
