@@ -1,0 +1,38 @@
+.wrapper{
+    display: flex;
+    grid-template-columns: repeat(auto-fit,minmax(12rem,16rem,));
+    gap:2rem;
+    justify-content: center;
+    margin-top: 0%;
+    
+
+}
+
+
+.Lookout{
+    display: flex;
+    grid-template-columns: repeat(auto-fit,minmax(12rem,16rem,));
+    gap:2rem;
+    justify-content: center;
+    margin-top: 0%;
+}
+
+.Hottest{
+    margin-top: 3%;
+    color: rgb(252, 79, 79);
+    font-size: 2.3rem;
+    width: 70%;
+    margin-left: 17%;
+    justify-content: center;
+    margin-bottom: 1%;
+}
+
+.EyesOut{
+    margin-top: 4%;
+    color: rgb(252, 79, 79);
+    font-size: 2.3rem;
+    width: 70%;
+    margin-left: 17%;
+    justify-content: center;
+    margin-bottom: 1%;
+}
