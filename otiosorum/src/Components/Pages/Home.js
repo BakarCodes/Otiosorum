@@ -11,8 +11,6 @@ function Home() {
             <b>HOME FOR THE UNDERRATED</b>
         </div>
         <div className='Introduction'>
-            
-            <div className='SubHeading'>
                 <h3 className='Subtitle'>
                     KNOW YOUR FAVOURITES
                 </h3>
@@ -29,21 +27,23 @@ function Home() {
                     <p className='Coloured'>
                         <p>
                             READ REVIEWS
-                        </p>
-                        <p>
-                            POST REVIEWS
-                        </p>
-                        <p>
-                            OR BE REVIEWED 
-                        </p>
+                            <p>
+                                POST REVIEWS
+                                <p>
+                                    OR BE REVIEWED 
+                                </p>
+                            </p>
+                        </p>                      
                     </p>
                 </p>
-            </div>
-           
         </div>
         <div className='Location'>
             <div className='LocationText'>
-                <h3>LONDON BASED COMPANY</h3>
+                <h3 className='LocationTitle'>LONDON BASED COMPANY</h3>
+                <p className='LocationPara'>A HOME-GROWN SERVICE PROVIDING USERS WITH A FRESH LOOK ON THE SMALLER BUSINESSES </p>
+                <div className='LondonImg'>
+                    
+                </div>
             </div>
         </div>
             

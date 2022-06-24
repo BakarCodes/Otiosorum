@@ -8,60 +8,76 @@ body{
     border-color: black;
 }
 .Slogan{
-    font-size: 0.9orem;
+    font-size: 0.9 rem;
     color: rgba(0, 0, 0, 0.663);
     text-align: center;
 }
 h1{
     color: rgb(252, 79, 79);
-    font-size: 4rem;
+    font-size: 5rem;
     text-align: center;
   
 }
 
 .Introduction{
-    display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 73.3%;
+    width: 73%;
     margin-top: 6%;
-    height: auto;
-   
 }
 
 .Review{
    display: inline-flex;
-   float: right;
+   float: right; 
    
 }
 
-.SubHeading{
-    padding-left: 0px;
-    display: inline-block;
-}
-
 .Subtitle {
-    font-size: 2.5rem;
+    font-size: clamp(2rem, 5vw, 3rem);
     margin: 0;
     padding-left: 10;
     color: rgb(252, 79, 79);
 }
 
+.KnowParagraph{
+    font-size: clamp(1rem, 1.25vw, 1.25rem);
+}
+
+.Ratings{
+    opacity: 0.6;
+    max-width: 100%;
+    max-height: 100%;
+    float: right;
+}
+
 .Coloured {
     color: rgb(252, 79, 79);
-    font-size: 2rem;
 }
 
 .Location{
-    display: block;
     width: 100%;
     margin-top: 9%;
-    height: auto;
+    height: 30%;
     Text-align: right;
     background-color:rgb(219, 97, 97); ;   
     padding-right: 14%; 
-    padding-bottom: 14%;
-    font-size: 2.2rem;
     color: white;
+    object-fit: contain;
+}
+
+
+
+
+
+.LondonImg{
+    max-width: 100%;
+    max-height: 100%;
+    opacity: 0.5;
+    mix-blend-mode: multiply;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    display: ;
+    float: left;
 }
 
