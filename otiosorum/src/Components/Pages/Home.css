@@ -1,22 +1,134 @@
-body{
-    background-color: white;
-}
-.Home{
-    font-family:JetBrains Mono, monospace;
-    font-size: 1.4rem;
-    border-width: 4px;
-    border-color: black;
-}
-.Slogan{
-    font-size: 0.9 rem;
-    color: rgba(0, 0, 0, 0.663);
-    text-align: center;
-}
-h1{
-    color: rgb(252, 79, 79);
-    font-size: 5rem;
-    text-align: center;
+@font-face {
+    font-family: 'space_monoregular';
+    src: url('../../Fonts/spacemono-regular-webfont.woff2') format('woff2'),
+         url('../../Fonts/spacemono-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
   
+  @font-face {
+    font-family: 'space_monobold';
+    src: url('../../Fonts/spacemono-bold-webfont.woff2') format('woff2'),
+         url('../../Fonts/spacemono-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'ITC Lubalin Graph Std';
+    src: url('../../Fonts/LubalinGraphStd-Book.woff2') format('woff2'),
+        url('../../Fonts/LubalinGraphStd-Book.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'ITC Lubalin Graph Std 2';
+    src: url('../../Fonts/LubalinGraphStd-Demi.woff2') format('woff2'),
+        url('../../Fonts/LubalinGraphStd-Demi.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'ITC Avant Garde Gothic Std 1';
+    src: url('../../Fonts/ITCAvantGardeStd-BkCnObl.woff2') format('woff2'),
+        url('../../Fonts/ITCAvantGardeStd-BkCnObl.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+    
+  }
+  
+  @font-face {
+    font-family: 'ITC Avant Garde Gothic Std 6';
+    src: url('../../Fonts/ITCAvantGardeStd-DemiObl.woff2') format('woff2'),
+        url('../../Fonts/ITCAvantGardeStd-DemiObl.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: 'space_monoregular';
+    src: url('../../Fonts/spacemono-regular-webfont.woff2') format('woff2'),
+         url('../../Fonts/spacemono-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'ITC Avant Garde Gothic Std 5';
+    src: url('../../Fonts/ITCAvantGardeStd-DemiObl.woff2') format('woff2'),
+        url('../../Fonts/ITCAvantGardeStd-DemiObl.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: 'karlaregular';
+    src: url('../../Fonts/karlawght-webfont.woff2') format('woff2'),
+         url('../../Fonts/karlawght-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'space_monobold';
+    src: url('../../Fonts/spacemono-bold-webfont.woff2') format('woff2'),
+         url('../../Fonts/spacemono-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'ITC Lubalin Graph Std';
+    src: url('../../Fonts/LubalinGraphStd-Book.woff2') format('woff2'),
+        url('../../Fonts/LubalinGraphStd-Book.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'ITC Lubalin Graph Std 2';
+    src: url('../../Fonts/LubalinGraphStd-Demi.woff2') format('woff2'),
+        url('../../Fonts/LubalinGraphStd-Demi.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+body{
+    
+}
+
+.Home{
+    height: 100%;
+}
+
+section{
+    width: 100%;
+    height: 90vh;
+}
+
+.one{
+    height: 100vh;
+    background-color: rgb(253, 253, 253);
+}
+
+.Company{
+    font-size: 5vh;
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+
+.Slogan{
+    margin-top: -3%;
+    font-size: 7vh;
+    color: rgb(0, 0, 0);
+    text-align: center;
+
 }
 
 .Introduction{
@@ -25,59 +137,112 @@ h1{
     width: 73%;
     margin-top: 6%;
 }
+.grid-col-span2 {
+    grid-column: span 2;
+  }
+  
+  .testimonial-grid{
+    margin-top: 4%;
+    display: grid;
+    gap: 0.3vw;
+    grid-template-columns: repeat(4, 1fr);
+    padding-block: 1rem;
+    width: min(70%,170vw);
+    height: min(90%,100vw);
+    margin-inline: auto;
+    
+  }
+  
+  .testimonial{
+    background-color: rgb(255, 255, 255);
+    /*border: 2px solid rgb(8, 191, 128);*/
+    border-radius: 0px;
+    
+  }
+  
+  .testimonial:hover{
+  
+  }
+  
+  article {
+    transition: transform 0.2s ease-in;
+  }
+  
 
-.Review{
-   display: inline-flex;
-   float: right; 
-   
+  article{
+    color: rgb(0, 0, 0);
+    font-size: 1.2vw;
+    text-align: left;
+  }
+
+  .testimonial:nth-child(1){
+    grid-column-start:1 ;
+    grid-column-end:5 ;
+    grid-row-start: 1;
+    grid-row-end: 2 ;
+  }
+
+  .testimonial:nth-child(2){
+    grid-column-start:1 ;
+    grid-column-end:3 ;
+    grid-row-start: 2;
+    grid-row-end: 3 ;
+  }
+  
+  .testimonial:nth-child(3){
+    
+    grid-column-start:3 ;
+    grid-column-end:5 ;
+    grid-row-start: 2;
+    grid-row-end: 3 ;
+  }
+
+  .testimonial:nth-child(4){
+    font-size: 2.8vh;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20%;
+    grid-column-start:1;
+    grid-column-end:3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+  }
+
+  .LocationTitle{
+    color: rgb(8, 191, 128);
+  }
+  
+  .testimonial:nth-child(5){
+    grid-column-start:3 ;
+    grid-column-end:5 ;
+    grid-row-start: 3;
+    grid-row-end: 4 ;
+  }
+  
+.Barber{
+  width: 73vh;
 }
 
-.Subtitle {
-    font-size: clamp(2rem, 5vw, 3rem);
-    margin: 0;
-    padding-left: 10;
-    color: rgb(252, 79, 79);
-}
-
-.KnowParagraph{
-    font-size: clamp(1rem, 1.25vw, 1.25rem);
-}
-
-.Ratings{
-    opacity: 0.6;
-    max-width: 100%;
-    max-height: 100%;
-    float: right;
-}
-
-.Coloured {
-    color: rgb(252, 79, 79);
-}
-
-.Location{
+.two{
+    font-size: 1.5rem;
     width: 100%;
-    margin-top: 9%;
-    height: 30%;
+    height: 92vh;
     Text-align: right;
-    background-color:rgb(219, 97, 97); ;   
+      
     padding-right: 14%; 
     color: white;
     object-fit: contain;
 }
 
-
-
-
-
-.LondonImg{
-    max-width: 100%;
-    max-height: 100%;
-    opacity: 0.5;
-    mix-blend-mode: multiply;
-    max-width: 100%;
-    max-height: 100%;
-    object-fit: contain;
-    display: ;
-    float: left;
+.Blooming{
+  padding-top: 20%;
+  height: 90vh;
+  opacity: 60%;
 }
+
+.Location{
+
+}
+
+
 

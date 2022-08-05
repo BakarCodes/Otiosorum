@@ -1,51 +1,53 @@
 import React from 'react'
 import "./Home.css"
-import {Button} from '../Button.js'
-
+import SearchBar from '../SearchBar'
+import Barber from '../../Images/Barber.svg'
 
 function Home() {
   return (
+    
     <div className='Home'>
-        <h1>OTIO</h1>
-        <div className='Slogan'>
-            <b>HOME FOR THE UNDERRATED</b>
-        </div>
+      <section class="one">
+      
+      <main className='testimonial-grid'>
+            <article className='testimonial'>
+              <h1 class='Company'>BOOK A SESSION NOW</h1>
+                  
+            </article>
+            <article className='testimonial'>
+              <SearchBar placeholder="Profession..."/>
+            </article>
+            <article className='testimonial'>
+              <SearchBar placeholder="Location..."/>
+            </article>
+            <article className='testimonial'>
+              <div className='Location'>
+                <div className='LocationText'>
+                  <h3 className='LocationTitle'>MAKE BOOKING SIMPLER</h3>
+                    <p className='LocationPara'>
+                      
+                    </p>
+                </div>
+              </div>
+            </article>
+            <article className='testimonial'>
+              <img className='Barber' src={Barber} alt="Barber">
+
+              </img>
+            </article>
+            
+          </main>
+        
         <div className='Introduction'>
                 <h3 className='Subtitle'>
-                    KNOW YOUR FAVOURITES
                 </h3>
                 <p className='KnowParagraph'>
-                    <p>
-                        WITH OTIO UNDERSTAND & BE UNDERSTOOD AS A BRAND 
-                    </p>
-                    <p>
-                        NEVER MISS A STEP IN QUALITY ASSURANCE
-                    </p>
-                    <p>
-                        SIGN UP NOW TO
-                    </p>
-                    <p className='Coloured'>
-                        <p>
-                            READ REVIEWS
-                            <p>
-                                POST REVIEWS
-                                <p>
-                                    OR BE REVIEWED 
-                                </p>
-                            </p>
-                        </p>                      
-                    </p>
                 </p>
         </div>
-        <div className='Location'>
-            <div className='LocationText'>
-                <h3 className='LocationTitle'>LONDON BASED COMPANY</h3>
-                <p className='LocationPara'>A HOME-GROWN SERVICE PROVIDING USERS WITH A FRESH LOOK ON THE SMALLER BUSINESSES </p>
-                <div className='LondonImg'>
-                    
-                </div>
-            </div>
-        </div>
+      </section>
+      <section class="two">
+        
+      </section>
             
 
     </div>
