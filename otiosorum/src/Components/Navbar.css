@@ -37,15 +37,15 @@
   }
   
   .navbar-logo {
-    font-family: 'ITC Lubalin Graph Std 2';
-    color: rgb(0, 0, 0);
     justify-self: start;
     margin-left: 20px;
     cursor: pointer;
-    text-decoration: none;
-    font-size: 1.5rem;
-    display: flex;
-    align-items: center;
+    
+  }
+  .Logo{
+    padding-top: 7%;
+    height: 6vh;
+    width: 20vh;
   }
   
   .fa-alien {

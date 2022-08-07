@@ -113,14 +113,16 @@ section{
 }
 
 .one{
-    height: 100vh;
-    background-color: rgb(253, 253, 253);
+  height: 100vh;
+  background-color: rgb(253, 253, 253);
 }
 
 .Company{
-    font-size: 5vh;
+    font-size: 6vh;
     color: rgb(0, 0, 0);
     text-align: center;
+    margin-top: 1%;
+    
 }
 
 .Slogan{
@@ -142,13 +144,12 @@ section{
   }
   
   .testimonial-grid{
-    margin-top: 4%;
     display: grid;
     gap: 0.3vw;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4, 0.5fr);
     padding-block: 1rem;
-    width: min(70%,170vw);
-    height: min(90%,100vw);
+    width: min(76%,170vw);
+    height: min(104%,100vw);
     margin-inline: auto;
     
   }
@@ -171,7 +172,7 @@ section{
 
   article{
     color: rgb(0, 0, 0);
-    font-size: 1.2vw;
+    font-size: 1.3vw;
     text-align: left;
   }
 
@@ -180,10 +181,12 @@ section{
     grid-column-end:5 ;
     grid-row-start: 1;
     grid-row-end: 2 ;
+    height: 10vh;
+    margin-bottom: -20%;
   }
 
   .testimonial:nth-child(2){
-    grid-column-start:1 ;
+    grid-column-start:2 ;
     grid-column-end:3 ;
     grid-row-start: 2;
     grid-row-end: 3 ;
@@ -192,16 +195,13 @@ section{
   .testimonial:nth-child(3){
     
     grid-column-start:3 ;
-    grid-column-end:5 ;
+    grid-column-end:4 ;
     grid-row-start: 2;
     grid-row-end: 3 ;
   }
 
   .testimonial:nth-child(4){
-    font-size: 2.8vh;
-    align-items: center;
-    justify-content: center;
-    padding-top: 20%;
+    padding-top: 5%;
     grid-column-start:1;
     grid-column-end:3;
     grid-row-start: 3;
@@ -209,7 +209,12 @@ section{
   }
 
   .LocationTitle{
+    font-size: 5vh;
     color: rgb(8, 191, 128);
+  }
+
+  .LocationPara{
+    font-size: 3vh;
   }
   
   .testimonial:nth-child(5){
@@ -219,29 +224,66 @@ section{
     grid-row-end: 4 ;
   }
   
-.Barber{
-  width: 73vh;
-}
+  .Booking{
+    width: 60vh;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  
+  }
 
 .two{
-    font-size: 1.5rem;
-    width: 100%;
-    height: 92vh;
-    Text-align: right;
-      
-    padding-right: 14%; 
-    color: white;
-    object-fit: contain;
+
+  height: 100vh;
+  background-color: rgb(253, 253, 253);
 }
 
-.Blooming{
-  padding-top: 20%;
-  height: 90vh;
-  opacity: 60%;
+.placeholder-grid{
+  display: grid;
+  gap: 0.3vw;
+  grid-template-columns: repeat(4, 1fr);
+  padding-block: 1rem;
+  width: min(70%,170vw);
+  height: min(90%,100vw);
+  margin-inline: auto;
+  
 }
 
-.Location{
+.placeholder{
+  background-color: rgb(255, 255, 255);
+  
+  border-radius: 10px;
+}
 
+.placeholder:nth-child(1){
+  
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+.Barber{
+  width: 60vh;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10%;
+}
+
+.placeholder:nth-child(2){
+  padding-top: 10%;
+  grid-column-start:3;
+  grid-column-end: 5;
+}
+
+.whatBook{
+  font-size: 5vh;
+  color: rgb(8, 191, 128);
+}
+
+.bookingDetails{
+  font-size: 3vh;
 }
 
 
