@@ -1,15 +1,35 @@
 body{
-    background-color: white;
+    background-color: rgb(28, 28, 28);
+}
+
+section{
+    width: 100%;
+    height: 90vh;
+    
+}
+.section-grid{
+    display: grid;
+    gap: 0.3vw;
+    grid-template-columns: repeat(9,1fr);
+    grid-template-rows: repeat(9,1fr);
+    padding-block: 1rem;
+    width: min(88%,170vw);
+    height: min(100%,100vw);
+    margin-inline: auto;
+    border: 2px solid rgb(252, 79, 79);
+  }
+
+article{
+    border: 2px solid rgb(0,0,0);
 }
 .Home{
     font-family:JetBrains Mono, monospace;
-    font-size: 1.4rem;
     border-width: 4px;
-    border-color: black;
+    border-color: rgb(255, 255, 255);
 }
 .Slogan{
     font-size: 0.9 rem;
-    color: rgba(0, 0, 0, 0.663);
+    color: rgb(255, 255, 255);
     text-align: center;
 }
 h1{
@@ -18,7 +38,27 @@ h1{
     text-align: center;
   
 }
+.Title{
+    grid-column-start:1 ;
+    grid-column-end:10 ;
+    grid-row-start: 1;
+    grid-row-end: 4 ;
+    /*box-shadow: 3px 2px 4px 2px rgba(0, 0, 0, 0.116);*/
+    text-align: center;
+   
+    border: 2px solid rgb(252, 79, 79);
+  }
 
+.Description{
+    grid-column-start:1 ;
+    grid-column-end:6 ;
+    grid-row-start: 4;
+    grid-row-end: 10 ;
+    /*box-shadow: 3px 2px 4px 2px rgba(0, 0, 0, 0.116);*/
+    text-align: Left;
+   
+    border: 2px solid rgb(252, 79, 79);
+}
 .Introduction{
     margin-left: auto;
     margin-right: auto;
@@ -41,6 +81,7 @@ h1{
 
 .KnowParagraph{
     font-size: clamp(1rem, 1.25vw, 1.25rem);
+    color:rgb(255,255,255)
 }
 
 .Ratings{
@@ -59,7 +100,7 @@ h1{
     margin-top: 9%;
     height: 30%;
     Text-align: right;
-    background-color:rgb(219, 97, 97); ;   
+    background-color:rgb(252, 79, 79) ;   
     padding-right: 14%; 
     color: white;
     object-fit: contain;
